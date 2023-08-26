@@ -25,7 +25,7 @@ mount -t tmpfs -o nosuid,nodev tmpfs $LFS/dev/shm
 
 #For Setting up scripts that are required inside chroot.
 mkdir -p $LFS/sources/scripts
-cp -r $LFS/../scripts/chroot_scripts/* $LFS/sources/scripts
+cp -r $SCRIPTS/chroot_scripts/* $LFS/sources/scripts
 
 chroot "$LFS" /usr/bin/env -i \
 	HOME=/root \
